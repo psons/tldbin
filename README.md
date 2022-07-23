@@ -12,10 +12,11 @@ tlog, which is a python goal planning, task manager, and journal keeping script.
 For now, these scripts only rin in a unix style shell.
 
 # to build the environment
+
+First make sure git and python 3.9.5 are installed
+
 1. create a parent directory named tldev.
 2. cd into tldev
-3. clone this repo
-4. and run
-    
-    tldbin/build_dev_enviro.sh
-
+3. execute the following to clone this repo and build the environment:
+	curl https://raw.githubusercontent.com/psons/tldbin/master/clonebuild_tld.sh | bash
+	
