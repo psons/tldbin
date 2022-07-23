@@ -27,4 +27,4 @@ tlog - the tlog module git repo.
 set -x
 dev_home=$(cd $(dirname $0)/..; pwd)
 cd "${dev_home}"
-bin/createVenv.sh pyvenvs
+tldbin/createVenv.sh pyvenvs
