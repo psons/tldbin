@@ -1,0 +1,2 @@
+make_dist.sh
+deploy_to_testuser.sh
