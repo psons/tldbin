@@ -24,7 +24,19 @@ tlog - the tlog module git repo.
 #   make the test user directory using tar files, archives and scripts in bin.
 
 #   assume bin has been cloned to run this script.
-set -x
+#set -x
 dev_home=$(cd $(dirname $0)/..; pwd)
 cd "${dev_home}"
+
+git clone http://github.com/psons/tlog.git 
+
+# uses pip requiremets from tlog
 tldbin/createVenv.sh pyvenvs
+
+test_user_dir=testuser
+mkdir "${test_user_dir}"
+cd "${test_user_dir}"
+git clone http://github.com/psons/tltestjournal.git 
+
+mkdir "${dev_home}/unit-test-tmp-dir"
+tldbin/run_tests.sh 

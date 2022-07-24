@@ -21,6 +21,9 @@ usage="
 ${usage}"
 venv_parent_dir="${1}"
 
+base_dev_dir=$(cd $(dirname $0)/..; pwd)
+pip_requirements_path="${base_dev_dir}/tlog/docs/requirements.txt"
+
 venv_dir_name=$(python3 --version | sed -e 's/ /_/g' | sed -e 's/Python/pyvenv/') || bail 2 "verify that python3 is installed and in the PATH"
 
 mkdir -p "$venv_parent_dir" || bail 2 "can not mkdir venv_parent_dir (${venv_parent_dir})"
@@ -34,7 +37,6 @@ python3 -m venv "${venv_dir_name}" || bail 4 "venv cration failed for ${venv_par
 
 set -x
 
-pip_requirements_path="../tlog/docs/requirements.txt"
 
 # pip install GitPython
 # pip install PyMongo
