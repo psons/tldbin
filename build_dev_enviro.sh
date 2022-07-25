@@ -39,4 +39,5 @@ cd "${test_user_dir}"
 git clone http://github.com/psons/tltestjournal.git 
 
 mkdir "${dev_home}/unit-test-tmp-dir"
+cd "${dev_home}"
 ${dev_home}/tldbin/run_tests.sh 
