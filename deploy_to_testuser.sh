@@ -1,6 +1,7 @@
 app_home=$(cd $(dirname $0)/..;pwd)
 echo In: $(basename $0)
 
-cd ${app_home}/testuser/bin
-pwd
-tar xvf ../../art/tl2_dist.tar
+testuser_bin="${app_home}/testuser/bin"
+artifact_dir="${app_home}/art"
+
+mkdir -p "${testuser_bin}" && cd "${testuser_bin}" && pwd && tar xvf "${artifact_dir}/tl_dist.tar"
