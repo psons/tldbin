@@ -41,3 +41,8 @@ git clone http://github.com/psons/tltestjournal.git
 mkdir "${dev_home}/unit-test-tmp-dir"
 cd "${dev_home}"
 ${dev_home}/tldbin/run_tests.sh 
+
+echo Tl load configuration forPycharm, run:
+echo
+echo "			 tldbin/load_tl-pycharm-idea.sh"
+echo 
