@@ -44,5 +44,5 @@ ${dev_home}/tldbin/run_tests.sh
 
 echo Tl load configuration forPycharm, run:
 echo
-echo "			 tldbin/load_tl-pycharm-idea.sh"
+echo "			 ${dev_home}/tldbin/load_tl-pycharm-idea.sh"
 echo 
