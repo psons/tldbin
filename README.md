@@ -20,3 +20,9 @@ First make sure git and python 3.9.5 are installed
 3. execute the following to clone this repo and build the environment:
 	curl https://raw.githubusercontent.com/psons/tldbin/master/clonebuild_tld.sh | bash
 	
+# when environment is built
+
+ - the build scripts should successfully run tests from the shell script run_tests.sh which you should be able to run independantly of the build script.
+ - you should be able to run run_u_state.sh which will use the test data to run tlog.
+ - optionally if you also run load_tl-pycharm-idea.sh than you should be able to open tldev as a Pycharm project with run configurations to run or debug the unit tests or tlog
+
