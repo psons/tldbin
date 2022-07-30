@@ -18,6 +18,7 @@ First make sure git and python 3.9.5 are installed
 1. create a parent directory named tldev.
 2. cd into tldev
 3. execute the following to clone this repo and build the environment:
+
 	curl https://raw.githubusercontent.com/psons/tldbin/master/clonebuild_tld.sh | bash
 	
 # when environment is built
