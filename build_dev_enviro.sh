@@ -38,7 +38,7 @@ cd "${test_user_dir}"
 git clone http://github.com/psons/tltestjournal.git 
 
 # capture the test data in a .tar to support local reset for test runs.
-${dev_home}/tldbin/capture_testjournal.sh tltestjournal_gitclone.tar
+${dev_home}/tldbin/capture_testjournal.sh tltestjournal_gitclone
 
 mkdir "${dev_home}/unit-test-tmp-dir"
 cd "${dev_home}"

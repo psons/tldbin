@@ -1,5 +1,4 @@
-# if this doesn't work, tyy activating the virtalenv.
-set -x
+# if this doesn't work, try activating the virtalenv.
 
 app_home=$(cd $(dirname $0)/..;pwd)
 echo In: $(basename $0)
