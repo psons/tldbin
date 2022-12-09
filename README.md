@@ -1,6 +1,6 @@
 # info
 This is a repository  of scripts to build and use a developmet environment for 
-tlog, which is a python goal planning, task manager, and journal keeping script.
+tlog, which is a python goal planning, task manager, and journal keeping script.  See https://github.com/psons/tlog README.md 
 
 # Main features
 
